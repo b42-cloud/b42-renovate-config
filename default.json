@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>b42-cloud/b42-renovate-config:default.json5"
+    "github>b42-cloud/b42-renovate-config:groupKubernetes#0.0.1"
   ]
 }
