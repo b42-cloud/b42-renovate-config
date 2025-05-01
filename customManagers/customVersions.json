@@ -1,0 +1,39 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "description": "Manage *_VERSION keys in YAML files.",
+      "customType": "regex",
+      "fileMatch": "{{arg0}}",
+      "matchStrings": [
+        "# renovate: datasource=(?<datasource>[a-zA-Z0-9-._]+?) depName=(?<depName>[^\\s]+?)(?: (?:packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s+[A-Z_]+_VERSION: *v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)",
+        "# renovate: datasource=(?<datasource>[a-zA-Z0-9-._]+?) depName=(?<depName>[^\\s]+?)(?: (?:packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s+[A-Z_]+_VERSION: *'v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)'",
+        "# renovate: datasource=(?<datasource>[a-zA-Z0-9-._]+?) depName=(?<depName>[^\\s]+?)(?: (?:packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s+[A-Z_]+_VERSION: *\"v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)\""
+      ]
+    },
+    {
+      "description": "Manage KUBERNETES_VERSION keys in YAML files.",
+      "customType": "regex",
+      "fileMatch": "{{arg0}}",
+      "matchStrings": [
+        "KUBERNETES_VERSION: *v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)",
+        "KUBERNETES_VERSION: *'v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)'",
+        "KUBERNETES_VERSION: *\"v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)\""
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "kubernetes/kubernetes"
+    },
+    {
+      "description": "Manage TALOS_VERSION keys in YAML files.",
+      "customType": "regex",
+      "fileMatch": "{{arg0}}",
+      "matchStrings": [
+        "TALOS_VERSION: *v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)",
+        "TALOS_VERSION: *'v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)'",
+        "TALOS_VERSION: *\"v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)\""
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "siderolabs/talos"
+    }
+  ]
+}
