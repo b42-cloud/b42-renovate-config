@@ -1,0 +1,8 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Extend all group presets.",
+  "extends": [
+    "github>b42-cloud/b42-renovate-config//group/kubernetes#main",
+    "github>b42-cloud/b42-renovate-config//group/talos#main"
+  ]
+}

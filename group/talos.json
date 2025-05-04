@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Group all Talos-related dependencies together.",
   "packageRules": [
     {
       "matchPackageNames": ["siderolabs/talos", "siderolabs/talosctl", "ghcr.io/siderolabs/talosctl"],
