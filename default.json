@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>b42-cloud/b42-renovate-config:groupKubernetes#0.0.1",
-    "github>b42-cloud/b42-renovate-config:groupTalos#0.0.1"
+    "github>b42-cloud/b42-renovate-config:groupKubernetes#main",
+    "github>b42-cloud/b42-renovate-config:groupTalos#main"
   ]
 }
