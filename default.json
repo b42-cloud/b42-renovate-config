@@ -1,10 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>b42-cloud/b42-renovate-config//group/all#main",
-    "github>b42-cloud/b42-renovate-config//customManagers/githubRelease#main(.ya?ml)",
-    "github>b42-cloud/b42-renovate-config//customManagers/customImages#main(.ya?ml)",
-    "github>b42-cloud/b42-renovate-config//customManagers/customVersions#main(.ya?ml)",
-    "github>b42-cloud/b42-renovate-config//customManagers/fluxSusbstitutions.json#main(.ya?ml)"
+    "github>b42-cloud/b42-renovate-config//group/all#1.0.0",
+    "github>b42-cloud/b42-renovate-config//customManagers/githubRelease#1.0.0(.ya?ml)",
+    "github>b42-cloud/b42-renovate-config//customManagers/customImages#1.0.0(.ya?ml)",
+    "github>b42-cloud/b42-renovate-config//customManagers/customVersions#1.0.0(.ya?ml)",
+    "github>b42-cloud/b42-renovate-config//customManagers/fluxSusbstitutions.json#1.0.0(.ya?ml)"
   ]
 }
