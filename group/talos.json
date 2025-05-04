@@ -5,6 +5,11 @@
     {
       "matchPackageNames": ["siderolabs/talos", "siderolabs/talosctl", "ghcr.io/siderolabs/talosctl"],
       "groupName": "siderolabs/talos"
+    },
+    {
+      "matchCategories": ["terraform"],
+      "matchPackageNames": ["siderolabs/talos", "siderolabs/talosctl", "ghcr.io/siderolabs/talosctl"],
+      "groupName": null
     }
   ]
 }
