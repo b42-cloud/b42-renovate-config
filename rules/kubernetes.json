@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Limit Kubernetes versions to avoid breaking changes.",
+  "packageRules": [
+    {
+      "matchPackageNames": ["kubernetes/kubectl", "kubernetes/kubernetes"],
+      "allowedVersions": "< 1.33.0"
+    }
+  ]
+}

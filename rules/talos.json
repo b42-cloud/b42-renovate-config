@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Limit Talos versions to avoid breaking changes",
+  "packageRules": [
+    {
+      "matchPackageNames": ["siderolabs/talos", "siderolabs/talosctl", "ghcr.io/siderolabs/talosctl"],
+      "allowedVersions": "< 1.10.0"
+    }
+  ]
+}
