@@ -18,7 +18,10 @@
       "matchStrings": [
         "KUBERNETES_VERSION: *v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)",
         "KUBERNETES_VERSION: *'v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)'",
-        "KUBERNETES_VERSION: *\"v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)\""
+        "KUBERNETES_VERSION: *\"v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)\"",
+        "kubernetesVersion: *v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)",
+        "kubernetesVersion: *'v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)'",
+        "kubernetesVersion: *\"v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)\""
       ],
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "kubernetes/kubernetes"
@@ -30,7 +33,10 @@
       "matchStrings": [
         "TALOS_VERSION: *v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)",
         "TALOS_VERSION: *'v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)'",
-        "TALOS_VERSION: *\"v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)\""
+        "TALOS_VERSION: *\"v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)\"",
+        "talosVersion: *v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)",
+        "talosVersion: *'v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)'",
+        "talosVersion: *\"v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)\""
       ],
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "siderolabs/talos"
