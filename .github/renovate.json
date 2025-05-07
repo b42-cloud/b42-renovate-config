@@ -1,0 +1,9 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>b42-cloud/b42-internal-renovate-config#0.1.0"
+  ],
+  "renovate-config-presets": {
+    "managerFilePatterns": "/\\.json5?$/"
+  }
+}
