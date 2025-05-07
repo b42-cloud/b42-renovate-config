@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Extend all rules presets.",
   "extends": [
-    "github>b42-cloud/b42-renovate-config//rules/kubernetes#main",
-    "github>b42-cloud/b42-renovate-config//rules/talos#main"
+    "github>b42-cloud/b42-renovate-config//rules/kubernetes#1.1.0",
+    "github>b42-cloud/b42-renovate-config//rules/talos#1.1.0"
   ]
 }
