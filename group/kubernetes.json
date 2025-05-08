@@ -4,7 +4,8 @@
   "packageRules": [
     {
       "extends": ["github>b42-cloud/b42-renovate-config//packages/kubernetes#main"],
-      "groupName": "kubernetes/kubernetes"
+      "branchTopic": "kubernetes-{{{newMajor}}}{{#if separateMinorPatch}}{{#if isPatch}}.{{{newMinor}}}{{/if}}{{/if}}.x{{#if isLockfileUpdate}}-lockfile{{/if}}",
+      "commitMessageTopic": "Kubernetes"
     }
   ]
 }

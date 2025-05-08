@@ -1,5 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "All Talos packages.",
   "matchSourceUrls": ["https://github.com/siderolabs/talos"]
 }

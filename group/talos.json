@@ -4,7 +4,12 @@
   "packageRules": [
     {
       "extends": ["github>b42-cloud/b42-renovate-config//packages/talos#main"],
-      "groupName": "siderolabs/talos"
+      "branchTopic": "talos-{{{newMajor}}}{{#if separateMinorPatch}}{{#if isPatch}}.{{{newMinor}}}{{/if}}{{/if}}.x{{#if isLockfileUpdate}}-lockfile{{/if}}",
+      "commitMessageTopic": "Talos"
+    },
+    {
+      "matchSourceUrls": ["https://github.com/siderolabs/terraform-provider-talos"],
+      "additionalBranchPrefix": "siderolabs-terraform-provider-"
     }
   ]
 }
