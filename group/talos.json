@@ -3,13 +3,8 @@
   "description": "Group all Talos-related dependencies together.",
   "packageRules": [
     {
-      "matchPackageNames": ["siderolabs/talos", "siderolabs/talosctl", "ghcr.io/siderolabs/talosctl"],
+      "extends": ["github>b42-cloud/b42-renovate-config//packages/talos#main"],
       "groupName": "siderolabs/talos"
-    },
-    {
-      "matchCategories": ["terraform"],
-      "matchPackageNames": ["siderolabs/talos", "siderolabs/talosctl", "ghcr.io/siderolabs/talosctl"],
-      "groupName": null
     }
   ]
 }

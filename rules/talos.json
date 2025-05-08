@@ -3,7 +3,7 @@
   "description": "Limit Talos versions to avoid breaking changes",
   "packageRules": [
     {
-      "matchPackageNames": ["siderolabs/talos", "siderolabs/talosctl", "ghcr.io/siderolabs/talosctl"],
+      "extends": ["github>b42-cloud/b42-renovate-config//packages/talos#main"],
       "allowedVersions": "< 1.11.0"
     }
   ]

@@ -3,7 +3,7 @@
   "description": "Limit Kubernetes versions to avoid breaking changes.",
   "packageRules": [
     {
-      "matchPackageNames": ["kubernetes/kubectl", "kubernetes/kubernetes"],
+      "extends": ["github>b42-cloud/b42-renovate-config//packages/kubernetes#main"],
       "allowedVersions": "< 1.34.0"
     }
   ]

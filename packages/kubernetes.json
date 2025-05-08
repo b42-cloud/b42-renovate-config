@@ -1,0 +1,8 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "All Kubernetes packages.",
+  "matchSourceUrls": [
+    "https://github.com/kubernetes/kubernetes",
+    "https://github.com/kubernetes/kubectl"
+  ]
+}
