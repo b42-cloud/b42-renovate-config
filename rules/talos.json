@@ -3,7 +3,7 @@
   "description": "Limit Talos versions to avoid breaking changes",
   "packageRules": [
     {
-      "extends": ["github>b42-cloud/b42-renovate-config//packages/talos#main"],
+      "extends": ["github>b42-cloud/b42-renovate-config//packages/talos#2.1.0"],
       "allowedVersions": "< 1.11.0"
     }
   ]

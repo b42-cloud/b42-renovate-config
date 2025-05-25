@@ -3,7 +3,7 @@
   "description": "Group all Talos-related dependencies together.",
   "packageRules": [
     {
-      "extends": ["github>b42-cloud/b42-renovate-config//packages/talos#main"],
+      "extends": ["github>b42-cloud/b42-renovate-config//packages/talos#2.1.0"],
       "branchTopic": "talos-{{{newMajor}}}{{#if separateMinorPatch}}{{#if isPatch}}.{{{newMinor}}}{{/if}}{{/if}}.x{{#if isLockfileUpdate}}-lockfile{{/if}}",
       "commitMessageTopic": "Talos"
     },
