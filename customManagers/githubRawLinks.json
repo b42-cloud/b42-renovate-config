@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "description": "Manage URLs matching GitHub raw file's direct download.",
+      "customType": "regex",
+      "fileMatch": "{{arg0}}",
+      "matchStrings": [
+        "https:\\/\\/raw.githubusercontent.com\\/(?<depName>[^/]+\\/[^/]+)\\/v?(?<currentValue>[^/$]+)\\/.*"
+      ],
+      "datasourceTemplate": "github-tags"
+    }
+  ]
+}

@@ -3,9 +3,10 @@
   "extends": [
     "github>b42-cloud/b42-renovate-config//group/all#main",
     "github>b42-cloud/b42-renovate-config//rules/all#main",
-    "github>b42-cloud/b42-renovate-config//customManagers/githubRelease#main(.ya?ml)",
     "github>b42-cloud/b42-renovate-config//customManagers/customImages#main(.ya?ml)",
     "github>b42-cloud/b42-renovate-config//customManagers/customVersions#main(.ya?ml)",
-    "github>b42-cloud/b42-renovate-config//customManagers/fluxSusbstitutions.json#main(.ya?ml)"
+    "github>b42-cloud/b42-renovate-config//customManagers/fluxSusbstitutions.json#main(.ya?ml)",
+    "github>b42-cloud/b42-renovate-config//customManagers/githubRawLinks#main(.ya?ml)",
+    "github>b42-cloud/b42-renovate-config//customManagers/githubRelease#main(.ya?ml)"
   ]
 }
